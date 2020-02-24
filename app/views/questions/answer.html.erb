@@ -1,3 +1,28 @@
-<h1>Stupid Coaching</h1>
-<!-- <p>Find me in app/views/questions/answer.html.erb</p> -->
-<p><%= @coach_answer %></p>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6 text-center my-3">
+      <%= image_tag 'angry_coach.png', alt: 'An angry coach', width: 200 %>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <h1 class="display-4 mt-3 text-center">Stupid coaching</h1>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <p class='text-center display-5'>You can ask or tell your coach anything!</p>
+    </div>
+  </div>
+  
+  <div class="row justify-content-center">
+    <h3 class='alert alert-primary'><%= @coach_answer %></h3>
+  </div>
+  <div class="row justify-content-center">
+    <%= link_to 'Ask Again', ask_path %>
+
+  </div>
+
+</div>
