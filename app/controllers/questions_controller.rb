@@ -5,7 +5,7 @@ class QuestionsController < ApplicationController
 
   def answer
     @answer_value = params[:question]
-    if @answer_value == 'I am going to work'
+    if @answer_value == 'I am going to work!'
       @coach_answer = 'Great!'
     elsif /[?]/.match(@answer_value).present?
       @coach_answer = 'Silly question, get dressed and go to work!'
